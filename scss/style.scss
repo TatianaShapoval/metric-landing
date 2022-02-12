@@ -1,0 +1,99 @@
+@import './reset';
+@import './vars';
+@import './global';
+
+
+.header{
+   &__inner{
+       display: flex;
+       justify-content: space-between;
+       text-align: center;
+       padding: 26px 0;
+   }
+   &__logo{
+       font-size: 27px;
+       line-height: 22px;
+       font-weight: 400;
+   }
+   &__responsive-btn{
+       display: none;
+   }
+   &__menu{
+       font-size: 15px;
+   }
+   &__menu-item{
+       padding: 0 17px;
+   }
+   &__menu-btn{
+       font-size: 16px;
+       border: none;
+       background-color: transparent;
+       cursor: pointer;
+       padding-left: 17px;
+   }
+    
+}
+.top{
+    background-image: url('../images/bg/top-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+    }
+    &__content{
+        max-width: 480px;
+        color: #fff;
+    }
+    &__title{
+        font-size: 38px;
+        line-height: 44px;
+        margin-bottom: 21px;
+        font-weight: 400;
+    }
+    &__text{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 25px;
+        max-width: 425px;
+    }
+    &__btn-sign{
+        border: none;
+        background-color: #000;
+        padding: 13px 23px;
+        color: #fff;
+        border-radius: 3px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-right: 37px;
+        cursor: pointer;
+    }
+    &__btn-learn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+.press{
+    background-color: #3E5C50;
+    &__inner{
+        padding: 28px 0 52px 0;
+    }
+    &__title{
+        color: rgba(255, 255, 255, 0.31);
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@import './fonts';
+@import './media';
