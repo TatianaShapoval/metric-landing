@@ -7,6 +7,7 @@
    &__inner{
        display: flex;
        justify-content: space-between;
+       align-items: center;
        text-align: center;
        padding: 26px 0;
    }
@@ -14,12 +15,14 @@
        font-size: 27px;
        line-height: 22px;
        font-weight: 400;
+       @extend %robotoslab-regular;
    }
    &__responsive-btn{
        display: none;
    }
    &__menu{
        font-size: 15px;
+       margin-left: auto;
    }
    &__menu-item{
        padding: 0 17px;
@@ -130,6 +133,9 @@
     &__item:last-child{
         margin-top: 70px;
         margin-bottom: 74px;
+    }
+    &__img{
+        padding-right: 20px;
     }
     &__info{
         max-width: 460px;
@@ -255,6 +261,94 @@
         align-items: center;
     }
 }
+.footer{
+    &__wrapper{
+        background-color: #2B2C2E;
+        padding: 42px 0;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__content{
+        color: #939596;
+        padding-right: 150px;
+    }
+    &__title{
+        @extend %robotoslab-regular;
+        font-size: 27px;
+        line-height: 22px;
+        color: #E6EAED;
+        margin-bottom: 25px;
+    }
+    &__text{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    &__form{
+        margin-bottom: 25px;
+    }
+    &__form-input{
+        background-color: #E8E8E8;
+        width: 193px;
+        height: 40px;
+        border: none;
+        
+    }
+    &__form-btn{
+        border: none;
+        width: 129px;
+        height: 40px;
+        background-color: #5F6166;
+        color: #fff;
+        cursor: pointer;
+        margin-left: -4px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+    }
+    &__social-item{
+        padding-right: 11px;
+    }
+    &__info-box{
+        display: flex;
+    }
+    &__info{
+        padding: 0 20px;
+    }
+    &__info-title{
+        color: #E4E8EB;
+        font-size: 17px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-weight: 400;
+        @extend %robotocondensed-regular;
+        margin-bottom: 11px;
+    }
+    &__info-item{
+        color: #939596;
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+
+
+
+
+    &__copy{
+        padding: 20px 0;
+        background-color: #1C1D1F;
+        color: #939596;
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+
+
 
 @import './fonts';
 @import './media';
